@@ -17,8 +17,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          A 24-hour event where wack clubbers of Chittenden County come together
-          and build janky things.
+          A fake 24-hour hackathon for making janky things.
         </p>
 
         <p className={styles.datetime}>
