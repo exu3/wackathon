@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { addDays, format } from "date-fns";
 
 export default function Home() {
+  const eventDate = addDays(new Date(), 14);
   return (
     <div className={styles.container}>
       <Head>
@@ -13,15 +15,13 @@ export default function Home() {
 
       <article className={styles.header}>
         <h1 className={styles.title}>
-          Welcome to the <a href="https://nextjs.org">Wackathon</a>.
+          Welcome to the <a href="https://uwu.boats/important">Wackathon</a>.
         </h1>
 
-        <p className={styles.description}>
-          A fake 24-hour hackathon for making janky things.
-        </p>
+        <p className={styles.description}>This is a fake event.</p>
 
         <p className={styles.datetime}>
-          📅 September 8 • 📍{" "}
+          📅 {format(eventDate, "PPP")} • 📍{" "}
           <a
             href="https://goo.gl/maps/xLLYQY7Fb9ZhxJAg8"
             className={styles.link}
