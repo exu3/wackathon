@@ -9,7 +9,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Wackathon</title>
-        <meta name="description" content="A 24-hour event for making." />
+        <meta name="description" content="A 24-hour event for wacking." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -23,10 +23,10 @@ export default function Home() {
         <p className={styles.datetime}>
           📅 {format(eventDate, "PPP")} • 📍{" "}
           <a
-            href="https://goo.gl/maps/xLLYQY7Fb9ZhxJAg8"
+            href="https://goo.gl/maps/wH1F2iAqAMzzBErS8"
             className={styles.link}
           >
-            Hack Club HQ
+            Wack Club Qh
           </a>
         </p>
 
